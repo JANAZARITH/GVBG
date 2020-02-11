@@ -10,11 +10,31 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+  },   {
+    path: 'glosario',
+    loadChildren: () => import('./glosario/glosario.module').then( m => m.GlosarioPageModule)
   },
   {
-    path: 'list',
-    loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
+    path: 'violencia-basada-genero',
+    loadChildren: () => import('./violencia-basada-genero/violencia-basada-genero.module').then( m => m.ViolenciaBasadaGeneroPageModule)
+  },
+  {
+    path: 'marco-juridico',
+    loadChildren: () => import('./marco-juridico/marco-juridico.module').then( m => m.MarcoJuridicoPageModule)
+  },
+  {
+    path: 'ataques-agente-quimicos',
+    loadChildren: () => import('./ataques-agente-quimicos/ataques-agente-quimicos.module').then( m => m.AtaquesAgenteQuimicosPageModule)
+  },
+  {
+    path: 'rutas-institucionales',
+    loadChildren: () => import('./rutas-institucionales/rutas-institucionales.module').then( m => m.RutasInstitucionalesPageModule)
+  },
+  {
+    path: 'creditos',
+    loadChildren: () => import('./creditos/creditos.module').then( m => m.CreditosPageModule)
   }
+ 
 ];
 
 @NgModule({

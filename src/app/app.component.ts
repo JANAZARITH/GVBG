@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { Platform } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 @Component({
@@ -17,9 +17,34 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
+      title: 'Glosario',
+      url: '/glosario',
+      icon: 'help'
+    },
+    {
+      title: 'Violencia basada en género',
+      url: '/violencia-basada-genero',
+      icon: 'woman'
+    },
+    {
+      title: 'Marco juridico',
+      url: '/marco-juridico',
+      icon: 'book'
+    },
+    {
+      title: 'Ataques con agentes quimicos',
+      url: '/ataques-agentes-quimicos',
+      icon: 'nuclear'
+    },
+    {
+      title: 'Rutas institucionales',
+      url: '/rutas-institucionales',
+      icon: 'walk'
+    },
+    {
+      title: 'Creditos',
+      url: '/creditos',
+      icon: 'paper'
     }
   ];
 
